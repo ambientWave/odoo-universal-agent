@@ -4,7 +4,7 @@ import { AgentController } from './agent/agent.controller.js';
 import { AgentService } from './agent/agent.service.js';
 
 @Module({
-  imports: [ConfigModule.forRoot()],
+  imports: [ConfigModule.forRoot({ isGlobal: true })],
   controllers: [AgentController],
   providers: [AgentService],
 })

@@ -1,9 +1,6 @@
 import { DynamicStructuredTool } from "@langchain/core/tools";
 import { z } from "zod";
 import { OdooClient } from 'odoo-xmlrpc-ts';
-import * as dotenv from "dotenv";
-
-dotenv.config();
 
 const odooConfig = {
     url: process.env.ODOO_URL || "",

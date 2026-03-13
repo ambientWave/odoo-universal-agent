@@ -1,9 +1,6 @@
 import { ChatGoogleGenerativeAI } from "@langchain/google-genai";
 import { odooQueryTool } from "../tools/odoo_rpc.js";
 import { createAgent } from "langchain";
-import * as dotenv from "dotenv";
-
-dotenv.config();
 
 const model = new ChatGoogleGenerativeAI({
     model: "gemini-2.5-flash-lite",
